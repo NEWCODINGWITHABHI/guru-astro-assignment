@@ -1,0 +1,100 @@
+footer{
+    padding: 2rem;
+    width: 100vw;
+    min-height:50vh;
+    background-color: #BD5300;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+footer .footer-inner-container{
+    display: flex;
+    justify-content:flex-start;
+    gap: 40px;
+    width: 90vw;
+    margin: auto auto;
+
+}
+footer .footer-inner-container h3{
+    font-size: 20px;
+}
+.guruji-link-payment{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.guruji-link-payment .about-guru{
+    max-width: 60%;
+}
+
+.guru-social-link{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.payment .payment-img{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90%;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+
+.company-support{
+    display: flex;
+    gap: 40px;
+    justify-content: space-evenly;
+    min-width: 40%;
+}
+.company-support p{
+    margin-top: 5px;
+}
+.company-support .cmp{
+    margin-bottom: 20px;
+}
+.company-support .cmp p{
+margin-top:5px;
+}
+.company-support .support{
+    margin-bottom: 20px;
+}
+.company-support .support p{
+    margin-top: 5px;
+}
+.footer-form{
+    max-width: 30%;
+}
+.footer-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.footer-form form input{
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.footer-form form textarea{
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.footer-form form button{
+    background-color: #4B9C0C;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+@media screen and (max-width: 800px){
+   footer .footer-inner-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+     
+    }
+    .guruji-link-payment{
+        flex-direction: row;
+    }
+}

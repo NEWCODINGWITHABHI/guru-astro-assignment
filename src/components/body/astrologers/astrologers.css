@@ -1,0 +1,100 @@
+.astro-section {
+  width: 100vw;
+  font-size:14px;
+  font-weight: 500;
+}
+.astro-section .astrologer-cont {
+  width: 80%;
+  margin: auto auto;
+  background-color: #ffefe3;
+  padding: 40px;
+  
+}
+.astrologer-cont .star-astro {
+  display: flex;
+  margin: auto auto;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.astrologer-cont .star-astro span {
+  font-weight: 700;
+  font-size: 32px;
+  color: #D97122;
+}
+.astrologer-cont .astro-card-wraper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.astrologer-cont .astro-card-wraper .ast-card{
+    margin-bottom: 40px;
+    position: relative;
+}
+.astrologer-cont .astro-card-wraper .ast-card .profile-img{
+    border-radius: 20px 20px 0px 0px ;
+}
+ .ast-card .live-img{
+    position: absolute;
+    bottom: 0;
+ }
+ .ast-card .years-img{
+    position: absolute;
+    top: 5%;
+    left: 4%;
+    width: 30%;
+ }
+ .ast-card .online-img{
+    position: absolute;
+    top: 4%;
+    right: 4%;
+   width: 30%;
+ }
+ .ast-card .astro-details{
+    position: absolute;
+    bottom: 20%;
+    color: white;
+    padding: 10px;
+    max-height: 50%;
+ }
+  .ast-card .astro-details h2{
+    font-weight: 700;
+  }
+ .ast-card .astro-details #special,#skills{
+    color:#FFDBC0;
+ }
+ .ast-card .astro-details h3{
+    margin-bottom: 10px;
+ }
+ .astrologer-cont .astro-card-wraper .astro-col-2{
+    margin-top: 100px;
+    /* display: flex; */
+ }
+
+
+@media screen and (max-width:768px){
+  .astrologer-cont .astro-card-wraper .astro-col-2,.astro-col-1,.astro-col-3{
+      display:flex;
+      gap: 10px;
+   }
+   .astrologer-cont .astro-card-wraper .astro-col-2{
+      margin-top: 0px;
+   }
+   .astrologer-cont .astro-card-wraper{
+      overflow-x: scroll;
+   }
+     .astrologer-cont .astro-card-wraper .ast-card{
+       min-width:200px;
+      min-height:200px;
+     }
+     .astrologer-cont .star-astro span{
+      font-size: 5vw;
+      text-align: center;
+     }
+     .ast-card p{
+      font-size: 12px;
+     }
+}

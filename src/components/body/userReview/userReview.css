@@ -1,0 +1,133 @@
+.user-review-section {
+  width: 100vw;
+  min-height: 60vh;
+}
+.user-review-cont {
+  width: 80%;
+  margin: auto auto;
+  background-color: #f2d2ba;
+  padding: 3rem 2rem;
+}
+.user-review-cont .review-star {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-size: 3rem;
+  color: #d97122;
+  font-weight: 700;
+  margin: 2rem;
+}
+.wrapper-of-wrapper {
+  position: relative;
+  /* padding: 2rem; */
+  margin: auto auto;
+  width: 80%;
+}
+.slide-wrapper-cont{
+    width: 100%;
+    overflow: hidden;
+}
+.review-card-wrapper {
+  width: 100%;
+  /* margin: auto auto; */
+  background-color: white;
+  display: flex;
+  transition: ease 1000ms;
+
+}
+.review-card-wrapper .card {
+  min-width: 100%;
+  min-height: 30rem;
+  font-size: 2rem;
+  padding: 2rem;
+  background-color: white;
+}
+.review-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  gap: 1rem;
+}
+.review-text {
+  max-width: 80%;
+  margin: auto auto;
+}
+.user-img {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  bottom: -10%;
+  margin: auto auto;
+  /* left: 5%; */
+  margin: auto auto;
+  z-index: 1000;
+}
+.user-img img {
+  /* min-width: 3rem; */
+  max-width: 10rem;
+  width: 6vw;
+     transition: transform 0.4s;
+}
+.user-img .active{
+    transform: scale(1.4);
+       transition: transform 0.4s;
+}
+.curve-img-bottom {
+  width: 80.5%;
+  margin: auto auto;
+}
+.curve-img-bottom img {
+  width: 100%;
+}
+
+#lt-btn {
+  position: absolute;
+  background-color: #d97122;
+  left: -2%;
+  padding: 1rem;
+  font-size: 3rem;
+  color: white;
+  top: 40%;
+}
+#gt-btn {
+  background-color: #d97122;
+  position: absolute;
+  right: -2%;
+  padding: 1rem;
+  font-size: 3rem;
+  color: white;
+  top: 40%;
+}
+
+@media screen and (max-width:660px){
+    .user-img img{
+    width: 2vw;
+    transform: scale(3.5);
+        
+    }
+    .user-img .active{
+        transform: scale(4.5);
+        z-index: 1000;
+        transition: transform 0.4s;
+    }
+    .user-img{
+        bottom: -2%;
+    }
+    .review-card-wrapper .card{
+        font-size: 3vw;
+        text-align: center;
+    }
+    .user-review-cont .review-star{
+        font-size: 5vw;
+        margin-left: -1vw;
+    }
+    .card .review-rating img{
+        width: 5vw;
+    }
+}
