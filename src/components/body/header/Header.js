@@ -1,43 +1,42 @@
-import React, { useEffect, useState } from 'react'
-import { sliders } from '../../utils/sliderImage'
-import "./header.css"
-import { color } from 'framer-motion';
-import MobileDrawer from './MobileDrawer';
+import React, { useEffect, useState } from "react";
+import { sliders } from "../../utils/sliderImage";
+import "./header.css";
+import { color } from "framer-motion";
+import MobileDrawer from "./MobileDrawer";
 function Header() {
-    const [current,setCurrent]=useState(0);
+  const [current, setCurrent] = useState(0);
 
-    useEffect(()=>{
-        const timer=setTimeout(()=>{
-            if(current==2){
-                setCurrent(0);
-            }
-            else{
-                setCurrent(prev=>prev+1);
-            }
-        },2000)
-        return ()=>{
-            clearTimeout(timer)
-        }
-    })
-   const backgroundStyle={
-      backgroundImage:`url(${sliders[current].image})`,
-      backgroundPosition:"center",
-      backgroundSize:"cover",
-      height:"100%"
-    }
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (current == 2) {
+        setCurrent(0);
+      } else {
+        setCurrent((prev) => prev + 1);
+      }
+    }, 2000);
+    return () => {
+      clearTimeout(timer);
+    };
+  });
+  const backgroundStyle = {
+    backgroundImage: `url(${sliders[current].image})`,
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+    height: "100%",
+  };
 
-    function goToNext(currState){
-        setCurrent(currState);
-    }
+  function goToNext(currState) {
+    setCurrent(currState);
+  }
   return (
     <header>
       <div className="home-cont" style={backgroundStyle}>
         <nav>
           <div className="guruji-icon drawer">
-        <div className='mobile-drawer'>
-          <MobileDrawer/>
-        </div>
-            <img className='guruji-img' src="/images/guruji.svg" alt="" />
+            <div className="mobile-drawer">
+              <MobileDrawer />
+            </div>
+            <img className="guruji-img" src="/images/guruji.svg" alt="" />
           </div>
 
           <div className="link">
@@ -85,11 +84,11 @@ function Header() {
             <span>Secure Payment </span>
           </div>
         </div>
-        <div className='dot'>
+        <div className="dot">
           {sliders.map((currImg, index) => {
             return (
               <span
-                className={index==current?"active":""}
+                className={index == current ? "active" : ""}
                 style={{ color: "white" }}
                 onClick={() => goToNext(index)}
               >
@@ -103,4 +102,4 @@ function Header() {
   );
 }
 
-export default Header
+export default Header;
