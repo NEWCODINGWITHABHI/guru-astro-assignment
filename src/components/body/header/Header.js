@@ -14,7 +14,7 @@ function Header() {
             else{
                 setCurrent(prev=>prev+1);
             }
-        },1000)
+        },2000)
         return ()=>{
             clearTimeout(timer)
         }
@@ -89,7 +89,7 @@ function Header() {
           {sliders.map((currImg, index) => {
             return (
               <span
-                
+                className={index==current?"active":""}
                 style={{ color: "white" }}
                 onClick={() => goToNext(index)}
               >

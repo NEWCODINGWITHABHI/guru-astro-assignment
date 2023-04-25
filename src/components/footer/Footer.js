@@ -1,40 +1,44 @@
-import React from 'react'
-import gurujiImg from '../../assets/images/guruji.svg'
-import facebook  from "../../assets/images/facebook.svg"
-import instagram from '../../assets/images/instagram.svg'
-import twitter  from "../../assets/images/twitter.svg"
-import youtube from '../../assets/images/youtube.svg'
-import razorpay from '../../assets/images/razorpay.svg';
-import paytm from '../../assets/images/paytmsvg.svg';
-import stripe from '../../assets/images/stripesvg.svg'
+import React from "react";
+import gurujiImg from "../../assets/images/guruji.svg";
+import facebook from "../../assets/images/facebook.svg";
+import instagram from "../../assets/images/instagram.svg";
+import twitter from "../../assets/images/twitter.svg";
+import youtube from "../../assets/images/youtube.svg";
+import razorpay from "../../assets/images/razorpay.svg";
+import paytm from "../../assets/images/paytmsvg.svg";
+import stripe from "../../assets/images/stripesvg.svg";
 
-import './footer.css';
+import "./footer.css";
 function Footer() {
   return (
     <footer>
       <div className="footer-inner-container">
         <div className="guruji-link-payment">
-          <div className="pic-heading">
-            <img src={gurujiImg} alt="guruji image" />
+          <div className="guru-details">
+            <div className="pic-heading">
+              <img src={gurujiImg} alt="guruji image" />
+            </div>
+            <div className="about-guru">
+              <p>
+                About Guruji s2 to 3 lines what guruji do and how it works About
+                Guruji s2 to 3 lines what guruji do and how it works
+              </p>
+            </div>
           </div>
-          <div className="about-guru">
-            <span>
-              About Guruji s2 to 3 lines what guruji do and how it works About
-              Guruji s2 to 3 lines what guruji do and how it works
-            </span>
-          </div>
-          <div className="guru-social-link">
-            <img src={facebook} alt="facebook" />
-            <img src={instagram} alt="instagram" />
-            <img src={twitter} alt="twitter" />
-            <img src={youtube} alt="youtube" />
-          </div>
-          <div className="payment">
-            <h3>Trusted & Seals</h3>
-            <div className="payment-img">
-              <img src={razorpay} alt="razorpay" />
-              <img src={paytm} alt="paytm" />
-              <img src={stripe} alt="stripe" />
+          <div className="social-and-payment">
+            <div className="guru-social-link">
+              <img src={facebook} alt="facebook" />
+              <img src={instagram} alt="instagram" />
+              <img src={twitter} alt="twitter" />
+              <img src={youtube} alt="youtube" />
+            </div>
+            <div className="payment">
+              <h3>Trusted & Seals</h3>
+              <div className="payment-img">
+                <img src={razorpay} alt="razorpay" />
+                <img src={paytm} alt="paytm" />
+                <img src={stripe} alt="stripe" />
+              </div>
             </div>
           </div>
         </div>
@@ -97,4 +101,4 @@ function Footer() {
   );
 }
 
-export default Footer
+export default Footer;

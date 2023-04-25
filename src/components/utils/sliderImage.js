@@ -1,16 +1,16 @@
 const sliders = [
   {
     name: "slider",
-    image: "images/slider1.svg",
+    image: "images/slider2.svg",
   },
 
   {
    name: "slider",
-    image: "images/slider2.svg",
+    image: "images/slider1.svg",
   },
   {
    name: "slider",
-    image: "images/slider1.svg",
+    image: "images/slider2.svg",
   }
 ];
 

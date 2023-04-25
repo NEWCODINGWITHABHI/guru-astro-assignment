@@ -3,14 +3,11 @@ footer{
     width: 100vw;
     min-height:50vh;
     background-color: #BD5300;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
     color: white;
 }
 footer .footer-inner-container{
     display: flex;
-    justify-content:flex-start;
+    justify-content:space-around;
     gap: 40px;
     width: 90vw;
     margin: auto auto;
@@ -18,21 +15,26 @@ footer .footer-inner-container{
 }
 footer .footer-inner-container h3{
     font-size: 20px;
+    font-weight: 600;
 }
 .guruji-link-payment{
-    width: 30%;
+    min-width:40%;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 .guruji-link-payment .about-guru{
-    max-width: 60%;
+    
+    font-size: 20px;
+    margin-top: 10px;
 }
+
 
 .guru-social-link{
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-bottom: 5px;
 }
 .payment .payment-img{
     display: flex;
@@ -47,11 +49,15 @@ footer .footer-inner-container h3{
     display: flex;
     gap: 40px;
     justify-content: space-evenly;
-    min-width: 40%;
+    /* min-width: 40%; */
+    font-size: 16px;
+
 }
 .company-support p{
     margin-top: 5px;
+    letter-spacing: 2px;
 }
+
 .company-support .cmp{
     margin-bottom: 20px;
 }
@@ -65,7 +71,7 @@ margin-top:5px;
     margin-top: 5px;
 }
 .footer-form{
-    max-width: 30%;
+    /* max-width: 30%; */
 }
 .footer-form form{
     display: flex;
@@ -74,20 +80,27 @@ margin-top:5px;
 
 }
 .footer-form form input{
-    padding: 5px 10px;
+    padding: 10px ;
     border-radius: 5px;
+    min-width:20vw;
+   
 }
 .footer-form form textarea{
-    padding: 5px 10px;
+    padding: 10px 20px;
     border-radius: 10px;
 }
 .footer-form form button{
     background-color: #4B9C0C;
-    border-radius: 5px;
-    padding: 5px 10px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
 }
 
 @media screen and (max-width: 800px){
+    footer{
+        overflow: hidden;
+
+    }
    footer .footer-inner-container{
         flex-direction: column;
         align-items: center;
@@ -96,5 +109,71 @@ margin-top:5px;
     }
     .guruji-link-payment{
         flex-direction: row;
+        min-width: 90%;
+        margin: auto;
     }
+    .guruji-link-payment .guru-details .pic-heading img{
+        width: 25vw;
+    }
+       .guruji-link-payment .about-guru{
+    
+        font-size:4vw;
+       
+        text-align:center;
+        
+    }
+    .guru-social-link img{
+        width:8vw ;
+    }
+      .guruji-link-payment .payment h3{
+        text-align: center;
+        font-size:4vw;
+      }
+    .payment .payment-img{
+        min-width: 40vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+   
+
+    }
+     .payment .payment-img img{
+        max-width:18vw ;
+     }
+    footer .footer-form{
+        min-width: 90%;
+
+    }
+    footer .footer-form form{
+        min-width:100%;
+        font-size: 1.5rem;
+    }
+     footer .footer-form form button{
+        font-weight: 600;
+        letter-spacing: 2px;
+        padding: 10px;
+     }
+     .company-support{
+        gap: 2vw;
+     }
+ 
+    .company-support .cmp h3,  .company-support .collaborate h3,.company-support .support h3,.company-support .imp-link h3{
+        font-size: 4vw;
+     }
+     .company-support p{
+       font-size: 3vw;
+       color: rgb(227, 221, 221);
+     }
+     .cmp-collaborate{
+        display: flex;
+        min-width:50%;
+        gap:5vw;
+
+     }
+     .support-imp-link{
+        display: flex;
+        min-width:50%;
+        gap: 5vw;
+     }
 }

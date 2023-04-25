@@ -74,7 +74,11 @@ header .home-cont .dot {
   align-items: center;
   gap: 1rem;
 }
-
+.active{
+  background-color: black;
+  border: 3px solid white;
+  border-radius: 50%;
+}
 .mobile-drawer {
   display: none;
 }
