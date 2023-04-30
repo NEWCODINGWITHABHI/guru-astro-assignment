@@ -30,7 +30,7 @@
     overflow: hidden;
 }
 .review-card-wrapper {
-  width: 100%;
+  min-width: 100%;
   /* margin: auto auto; */
   background-color: white;
   display: flex;
@@ -72,11 +72,11 @@
   /* min-width: 3rem; */
   max-width: 10rem;
   width: 6vw;
-     transition: transform 0.4s;
+  transition: transform 0.4s;
 }
 .user-img .active{
     transform: scale(1.4);
-       transition: transform 0.4s;
+    transition: transform 0.4s;
 }
 .curve-img-bottom {
   width: 80.5%;

@@ -36,8 +36,8 @@ function Testimonial() {
 
   function timerFun(){
     console.log(currIndex,"nnnn")
-    if(currIndex==4){
-        setCurrIndex(0)
+    if(currIndex==5){
+        setCurrIndex(-1)
     }
     setCurrIndex(prev=>prev+1);
   }

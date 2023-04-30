@@ -13,7 +13,7 @@ function Header() {
       } else {
         setCurrent((prev) => prev + 1);
       }
-    }, 2000);
+    },3000);
     return () => {
       clearTimeout(timer);
     };
